@@ -5,7 +5,7 @@
   export default{
     name: 'ProjectList',
     components: {
-      SingleProject
+      SingleProject,
     },
     data(){
       return{
@@ -17,6 +17,7 @@
         axios.get('http://127.0.0.1:8000/api/projects')
         .then((response)=> {
           this.projects = response.data.projects;
+          console.log("called");
         });
       }
     },

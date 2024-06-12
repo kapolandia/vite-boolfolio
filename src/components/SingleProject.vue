@@ -26,7 +26,7 @@
                 <p>
                     {{projectResults.summary}}
                 </p>
-
+                <router-link :to="{name: 'project-view', params: {'slug':projectResults.slug}}" class="btn btn-primary">View more<i class="fa-solid fa-chevron-right ms-3"></i></router-link>
             </div>
         </div>
     </div>

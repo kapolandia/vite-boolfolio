@@ -1,11 +1,10 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue';
-import ProjectList from './components/ProjectList.vue'
 </script>
 
 <template>
   <AppHeader/>
-  <ProjectList/>
+  <router-view></router-view>
 </template>
 
 <style scoped>
